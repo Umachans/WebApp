@@ -1,9 +1,0 @@
-
-package com.example.demo.config;
-
-@Enable
-public class WebSecurityConfig {
-	
-	
-
-}

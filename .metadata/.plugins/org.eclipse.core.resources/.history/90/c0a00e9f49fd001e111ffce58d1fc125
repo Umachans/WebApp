@@ -1,8 +1,0 @@
-package com.example.demo.aspect;
-
-
-
-@Aspect
-public class CommonAspect {
-
-}

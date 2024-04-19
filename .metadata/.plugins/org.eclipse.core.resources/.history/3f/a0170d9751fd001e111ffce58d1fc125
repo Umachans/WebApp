@@ -1,7 +1,0 @@
-package com.example.demo.form;
-
-
-@Data
-public class UserListForm {
-
-}

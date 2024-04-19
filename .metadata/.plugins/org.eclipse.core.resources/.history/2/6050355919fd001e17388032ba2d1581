@@ -1,6 +1,0 @@
-#業務エラーメッセージ
-common.formError=項目チェックエラーがあります。入力内容を修正してください。
-loin.wrongInput=ログインIDとパスワードの組み合わせが間違っています。
-signup.existed.LoginId=既に登録されているユーザIDです。
-#業務メッセージ
-signup.resistSucceed=ユーザーの登録を行いました。

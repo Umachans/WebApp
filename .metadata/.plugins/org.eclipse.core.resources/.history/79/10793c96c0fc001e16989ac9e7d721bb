@@ -1,1 +1,0 @@
-org.hibernate.validator.constraints.Length.Length.message=(min)から(max)桁の間で入力してください。

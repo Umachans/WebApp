@@ -1,7 +1,0 @@
-package com.example.demo.repository;
-
-
-
-public interface UserInfoRepository extends JpaRepository<UserInfo,String>{
-
-}
