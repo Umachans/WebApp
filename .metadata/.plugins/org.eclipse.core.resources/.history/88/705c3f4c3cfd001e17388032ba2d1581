@@ -1,0 +1,11 @@
+package com.example.demo.constant;
+
+
+
+
+
+@Getter
+@AllArgsConstructor
+public enum AuthorityKind {
+
+}

@@ -1,0 +1,27 @@
+package com.example.demo.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+
+//DBからとってきた情報を保管するクラス
+@Entity //このクラスを示す@
+@Table(name="user_info2")//どのテーブルとリンクしているか
+@Data //getter/setterの役割がある
+public class UserInfo {
+	//フィールド名
+	
+	/*ログインID：primarykey*/
+	@Id
+	@Column(name="login_id")//テーブルのフィールド名とフィールド名が違う時は@Columnで紐付ける
+	private String loginId;
+	
+	
+	/*パスワード*/
+	/*DBの名前とJavaの変数と同じ名前だから自動的に入ってくる*/
+	private String password;
+
+}

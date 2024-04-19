@@ -1,0 +1,19 @@
+package com.example.demo.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.entity.UserInfo;
+
+//DBから情報をとってくるクラス
+/**
+ * JpaRepositoryを継承
+ * ジェネリクスの中にはEntityクラスを書く<UserInfo,String>
+ * Stringは一つ目のデータの型(今回はString型)
+ * 
+ */
+
+@Repository
+public interface UserInfoRepository extends JpaRepository<UserInfo,String>{
+
+}

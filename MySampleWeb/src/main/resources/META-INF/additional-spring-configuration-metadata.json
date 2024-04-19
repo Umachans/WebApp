@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "security.locking-border-count",
+    "type": "java.lang.String",
+    "description": "A description for 'security.locking-border-count'"
+  },
+  {
+    "name": "security.locking-time",
+    "type": "java.lang.String",
+    "description": "A description for 'security.locking-time'"
+  },
+  {
+    "name": "logging.lebel.com.example.demo",
+    "type": "java.lang.String",
+    "description": "A description for 'logging.lebel.com.example.demo'"
+  }
+]}

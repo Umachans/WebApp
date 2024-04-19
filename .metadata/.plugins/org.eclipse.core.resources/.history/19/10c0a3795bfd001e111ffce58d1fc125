@@ -1,0 +1,7 @@
+package com.example.demo.entity.converter;
+
+
+@Converter
+public class UserAuthorityConverter {
+
+}

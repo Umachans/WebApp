@@ -1,0 +1,9 @@
+package com.example.demo.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+
+@Aspect
+@Component
+public class CommonAspect {
+
+}

@@ -1,0 +1,12 @@
+package com.example.demo.entity;
+
+import org.hibernate.annotations.Table;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Table(name='userInfo2')
+@Data
+public class UserInfo {
+
+}

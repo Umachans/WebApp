@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ユーザー登録画面</title>
+</head>
+<body>
+	<div th:insert="common/sourceList :: sourceList"></div>
+	<div th:replace="common/messageIcon :: messageIcon"></div>
+<div class="container-fluid">
+<h2>ユーザー登録画面</h2>
+    <div class="alert d-flex align-items-center"th:classappend="|${isError ? 'alert-danger' : 'alert-primary'}|" role="alert" th:if="${message !=null}">
+		<svg class="bi flex-shrink-0 me-2" width="24" height="24">
+			<use xlink:href="#exclamation-triangle-fill"th:if="${isError}"/>
+			<use xlink:href="#info-fill" th:unless="${isError}"/>
+		</svg>
+        <span th:text="${message}"></span>
+    </div>
+<form th:action="@{/signup}" method="post" th:object="${signupForm}">
+	<div class="form-group">
+		<div class="col-1">
+	     <p> <label for="loginId">ログインID</label>
+	      <input class="form-control" type="text" th:field="*{loginId}">
+		  </div>
+		  <div class="col-1">
+			<p> <label for="password">パスワード</label>
+			<input class="form-control "type="password" th:field="*{password}">	
+			<p> <input class="btn btn-primary" type="submit" value="ユーザー登録">
+	     </div>
+       </form>
+	   <a th:href="@{/login}">▶︎ログイン画面へ戻る</a>
+      </div>
+    </body>
+   </html>

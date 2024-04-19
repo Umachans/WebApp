@@ -1,0 +1,13 @@
+package com.example.demo.util;
+
+import java.util.Locale;
+
+/**
+ * アプリケーション共通クラス
+ */
+public class AppUtil {
+	public static String getMessage(MessageSource messagesource,String key,Object...params) {
+		return messageSource.getnmessage(key,params,Locale.JAPAN);
+	}
+
+}
